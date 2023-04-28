@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="tuoi"> <br>
+<button onclick="tinh()">Tinh</button>
+<p id="hientong"></p> <br>
+<p id="hientich"></p>
+</body>
+</html>
+<script>
+  function tinh(){
+    let a;
+    let tong=0;
+    let tich=1;
+    a=document.getElementById("tuoi").value;
+    for (let i= 1;i<=a;i++){
+      tong += +i;
+      tich = tich*i;
+    }
+    document.getElementById("hientong").innerHTML=tong;
+    document.getElementById("hientich").innerHTML=tich;
+  }
+</script>

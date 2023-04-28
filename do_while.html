@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input id="nhaptuoi"><br>
+<button onclick="check()">Check</button>
+<p id="hienthi"></p>
+</body>
+</html>
+<script>
+  let value = null;
+  do {
+    value = prompt("haynhaplai");
+    if (value < 1 || value > 100)
+      alert("Hay nhap lai");
+  } while (value < 1 || value > 100)
+  alert("ban vua nhap so tuoi la"+value);
+</script>
